@@ -8,5 +8,5 @@ A standalone study tool for MA160 exam preparation.
 4. Double-click **MA160_Study_App.exe**.
 
 ### Troubleshooting
-* **"Windows protected your PC":** Click **More Info** and then **Run Anyway**. (This happens because I am an independent student developer, not a multi-billion dollar corporation!)
+* **"Windows protected your PC":** Click **More Info** and then **Run Anyway**. (This happens because I am a wannabe student developer, not a corp!)
 * **Antivirus:** If your antivirus deletes the file, you may need to temporarily disable it or add an exception for this folder.
