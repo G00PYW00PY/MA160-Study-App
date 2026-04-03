@@ -1,2 +1,12 @@
-# MA160-Study-App
-This is a simple study app for Linear Algebra. It prompts the user for input on what exam they are studying for then allows them to practice a randomly picked homework problem from the syllabus.
+# MA160 Linear Algebra Study App
+A standalone study tool for MA160 exam preparation.
+
+## How to Download & Run (Windows)
+1. Look at the **Releases** section on the right side of this page.
+2. Download the `MA160_Study_App.zip` file.
+3. Right-click the zip, select **Extract All**, then open the folder.
+4. Double-click **MA160_Study_App.exe**.
+
+### Troubleshooting
+* **"Windows protected your PC":** Click **More Info** and then **Run Anyway**. (This happens because I am an independent student developer, not a multi-billion dollar corporation!)
+* **Antivirus:** If your antivirus deletes the file, you may need to temporarily disable it or add an exception for this folder.
