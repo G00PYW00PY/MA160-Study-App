@@ -13,4 +13,5 @@ A standalone study tool for MA160 exam preparation.
 
 ## Anticipating requests
 Q: Lee, can you make it so we can see the answers or the questions?
+
 A: No, due to copywrite issues I cannot show content directly from the textbook :(
