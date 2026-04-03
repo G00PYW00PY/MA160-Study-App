@@ -10,3 +10,7 @@ A standalone study tool for MA160 exam preparation.
 ### Troubleshooting
 * **"Windows protected your PC":** Click **More Info** and then **Run Anyway**. (This happens because I am a wannabe student developer, not a corp!)
 * **Antivirus:** If your antivirus deletes the file, you may need to temporarily disable it or add an exception for this folder.
+
+## Anticipating requests
+Q: Lee, can you make it so we can see the answers or the questions?
+A: No, due to copywrite issues I cannot show content directly from the textbook :(
