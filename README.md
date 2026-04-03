@@ -1,5 +1,6 @@
 # MA160 Linear Algebra Study App
 A standalone study tool for MA160 exam preparation.
+Requires: David Poole, Linear Algebra: A Modern Introduction, 3rd Edition, Cengage Learning
 
 ## How to Download & Run (Windows)
 1. Look at the **Releases** section on the right side of this page.
