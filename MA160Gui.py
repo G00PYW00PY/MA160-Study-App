@@ -99,9 +99,48 @@ class StudyApp:
             command=self.skip
         ).pack(pady=5)
 
+        tk.Button(
+            button_frame,
+            text="Custom HW",
+            width=10,
+            bg=self.button_color,
+            fg=self.fg_color,
+            activebackground=self.accent,
+            command=self.open_homework_selector
+        ).pack(side="left", padx=5)
         #FUTURE FEATURE
         # tk.Button(root, text="Show Answer", command=self.show_answer).pack(pady=5)
 
+    #Homework problem
+    def open_homework_selector(self):
+        # Create a popup window
+        top = tk.Toplevel(self.root)
+        top.title("Select Homework Sections")
+        top.configure(bg=self.bg_color)
+
+        # Dictionary to keep track of checkbutton variables
+        vars = {}
+
+        # Create checkboxes for all available sections
+        for section in sorted(self.bank.data.keys()):
+            var = tk.BooleanVar()
+            vars[section] = var
+            tk.Checkbutton(
+                top, text=f"Section {section}", variable=var,
+                bg=self.bg_color, fg=self.fg_color, selectcolor=self.button_color
+            ).pack(anchor="w", padx=20)
+
+        # Submit button
+        def submit():
+            selected = [s for s, v in vars.items() if v.get()]
+            if selected:
+                self.bank.load_sections(selected)
+                self.next_problem()
+                top.destroy()
+            else:
+                messagebox.showwarning("Warning", "Please select at least one section.")
+
+        tk.Button(top, text="Start Session", command=submit, bg=self.accent).pack(pady=10)
     #SESSION CONTROL
 
     def start_session(self, exam_name):
