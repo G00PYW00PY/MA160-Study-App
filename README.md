@@ -5,7 +5,7 @@ A standalone study tool for MA160 exam preparation.
 ## How to Download & Run 
 1. Look at the **Releases** section on the right side of this page.
 2. For Windows: Double-click **MA160_Study_App.exe**.
-3. For Mac: Double-click **MA160_Study_App.exe**.
+3. For Mac: Double-click **MA160_Study_App**.
 
 ### Troubleshooting
 * **"Windows protected your PC":** Click **More Info** and then **Run Anyway**. (This happens because I am a wannabe student developer, not a corp!)
