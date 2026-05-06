@@ -2,11 +2,12 @@
 A standalone study tool for MA160 exam preparation.
 * Requires: David Poole, Linear Algebra: A Modern Introduction, 3rd Edition, Cengage Learning
 
-## How to Download & Run (Windows)
+## How to Download & Run 
 1. Look at the **Releases** section on the right side of this page.
 2. Download the `MA160_Study_App.zip` file.
 3. Right-click the zip, select **Extract All**, then open the folder.
-4. Double-click **MA160_Study_App.exe**.
+4. For Windows: Double-click **MA160_Study_App.exe**.
+5. For Mac: Double-click **MA160_Study_App.exe**.
 
 ### Troubleshooting
 * **"Windows protected your PC":** Click **More Info** and then **Run Anyway**. (This happens because I am a wannabe student developer, not a corp!)
