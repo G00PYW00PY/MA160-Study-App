@@ -15,12 +15,9 @@ class ProblemBank:
             "3.5": ["1", "2", "6", "7", "12", "18", "22", "27", "40", "46", "51"],
             "3.6": ["2", "6", "10", "14", "17", "22", "31", "37"],
             "4.1": ["2", "6", "8", "11", "20", "21", "24", "25"],
-            "4.2": ["2", "4", "7", "14", "16", "23", "29", "33", "39", "46", "48", "49", "64"],
+            "4.2": ["2", "4", "7", "14", "16", "23", "29", "33", "39", "46", "48", "49"],
             "4.3": ["4", "8", "15"],
             "4.4": ["2", "4", "6", "11", "21", "27", "36"],
-            "5.1": ["2", "4", "8", "10", "14", "18"],
-            "5.2": ["2", "4", "8", "10", "12", "16", "20"],
-            "5.3": ["3", "6", "8", "9", "15"]
         }
 
         self.current_pool = []
@@ -28,11 +25,23 @@ class ProblemBank:
         self.needs_review = []
         self.current_problem = None
 
+    def load_sections(self, sections_list):
+        self.current_pool = []
+        self.completed = []
+        self.needs_review = []
+
+        for section in sections_list:
+            if section in self.data:
+                for problem in self.data[section]:
+                    self.current_pool.append((section, problem))
+
+        random.shuffle(self.current_pool)
+
     def load_exam(self, exam_name):
         exam_sections = {
             "Exam 1": ["1.1", "1.2", "1.3", "2.1"],
             "Exam 2": ["2.2", "2.3", "3.1", "3.2", "3.3"],
-            "Exam 3": ["3.5", "3.6", "4.1", "4.2", "4.3", "4.4", "5.1", "5.2", "5.3"],
+            "Exam 3": ["3.5", "3.6", "4.1", "4.2", "4.3", "4.4"],
             "Final": list(self.data.keys())
         }
 
